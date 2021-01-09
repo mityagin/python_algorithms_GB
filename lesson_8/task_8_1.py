@@ -3,3 +3,13 @@
 #
 # Примечание. Решите задачу при помощи построения графа.
 
+n = int(input('Введите количество друзей: '))
+
+friends = []
+for i in range(n):
+    for j in range(n):
+        if j != i:
+            friends.append([i, j])
+
+print(f'Было рукопожатий: {int(len(friends)/2)}')
+
